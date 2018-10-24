@@ -16,11 +16,16 @@
   },
   "dependencies": {
     "react": "^16.6.0",
-    "source-map-support": "0.5.9"
+    "react-dom": "^16.6.0",
+    "redux-zero": "^4.14.0",
+    "source-map-support": "0.5.9",
+    "styled-components": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
     "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
     "electron": "^3.0.5",
     "electron-builder": "^20.28.4",
     "electron-webpack": "^2.3.1",
