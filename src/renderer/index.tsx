@@ -1,15 +1,18 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react'
+import {render} from 'react-dom'
+import {Provider} from 'redux-zero/react'
+import store from './redux-zero/store'
 
+// Components
+import Calendar from './components/calendar'
 
-class App extends Component {
-  public render() {
-    return (
-      <>
-        BLAINE DOES THINGS
-      </>
-    )
-  }
-}
+const App = () => (
+  <Provider store={store}>
+    <>
+      <div>BLAINE DOES THINGS</div>
+      <Calendar />
+    </>
+  </Provider>
+)
 
-ReactDOM.render(<App />, document.getElementById('app'))
+render(<App />, document.getElementById('app'))

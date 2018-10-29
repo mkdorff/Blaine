@@ -1,25 +1,19 @@
 import createStore from 'redux-zero'
 
-type FrequencyType = 'xYears' | 'xMonths' | 'xWeeks' | 'xDays' | 'specificDates'
-type DayType = 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday' | 'saturday' | 'sunday'
-type WeekendShiftType = 'before' | 'after'
-
-interface RecurringItem {
-  frequencyType: FrequencyType
-  xFrequency?: number
-  datesOf: [number]
-  dayOfWeek?: DayType
-  weekendShift: WeekendShiftType
-  amount: number
-}
-
-interface GlobalStore {
-  [field: string]: [RecurringItem?]
-}
-
+// I guess... I don't need them to be separate fields (income/expense)
 const initialState: GlobalStore = {
-  expenseItems: [],
-  incomeItems: [],
+  financialItems: [],
 }
+initialState.financialItems = [
+  ...initialState.financialItems,
+  {
+    amount: 24,
+    datesOf: [5],
+    frequencyType: 'singular',
+    id: 'sadf',
+    name: 'banan',
+    weekendShift: 'after',
+  },
+]
 
 export default createStore(initialState)
