@@ -7,6 +7,18 @@ function addFinancialItem({financialItems = []}: GlobalStore, newItem: Financial
   }
 }
 
+// initialState.financialItems = [
+//   ...initialState.financialItems,
+//   {
+//     amount: 24,
+//     datesOf: [5],
+//     frequencyType: 'singular',
+//     id: 'sadf',
+//     name: 'banan',
+//     weekendShift: 'after',
+//   },
+// ]
+
 const removeFinancialItem = ({financialItems = []}: GlobalStore, removalId: string) => ({
   financialItems: financialItems.filter(({id}) => id !== removalId),
 })

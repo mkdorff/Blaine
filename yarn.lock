@@ -723,6 +723,14 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@types/styled-components@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-4.0.3.tgz#8287e54e446302369eecc521243a2f32cf9122ee"
+  integrity sha512-LzntHlOKEOxUxMkVmQPNG88TsldeHO2NlwNkzHnw4wL8qhHQgd7u+u3yw84hZgoFh4ugsLCbFtjYcbP7v5WC5Q==
+  dependencies:
+    "@types/node" "*"
+    "@types/react" "*"
+
 "@types/webpack-env@^1.13.6":
   version "1.13.6"
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.13.6.tgz#128d1685a7c34d31ed17010fc87d6a12c1de6976"
@@ -3061,6 +3069,11 @@ fill-range@^4.0.0:
     is-number "^3.0.0"
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
+
+final-form@^4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/final-form/-/final-form-4.10.0.tgz#6179bca7676925202510e9877eb1ad2ad1cd3460"
+  integrity sha512-pq/LKcynfI7CWJUX/YlMKwL6Xf5s6SxfjwFT6Saz4Qnwce5flShPQW7IOpxauy/PzD9LMwH/0qI5fXnNaBlOJg==
 
 finalhandler@1.1.1:
   version "1.1.1"
@@ -5771,6 +5784,11 @@ react-dom@^16.6.0:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.10.0"
+
+react-final-form@^3.6.7:
+  version "3.6.7"
+  resolved "https://registry.yarnpkg.com/react-final-form/-/react-final-form-3.6.7.tgz#c4d2e01e04674201b850cdd05ed5b67ff5ea06c5"
+  integrity sha512-/m7JBwA5FaGlSo2ZSFhzQYfPKfT18uirIbJrojWgb9GLoYU2wEOq9yM+vlugqTPD4Ozq+TFJDxWr1jzgASN0fA==
 
 react-is@^16.3.1:
   version "16.6.0"

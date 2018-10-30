@@ -1,19 +1,12 @@
 import createStore from 'redux-zero'
+// import {connect} from 'redux-zero/devtools'
+// import {applyMiddleware} from 'redux-zero/middleware'
+// window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
-// I guess... I don't need them to be separate fields (income/expense)
 const initialState: GlobalStore = {
   financialItems: [],
 }
-initialState.financialItems = [
-  ...initialState.financialItems,
-  {
-    amount: 24,
-    datesOf: [5],
-    frequencyType: 'singular',
-    id: 'sadf',
-    name: 'banan',
-    weekendShift: 'after',
-  },
-]
+// const middlewares = connect ? applyMiddleware(connect(initialState)) : []
+// export default createStore(initialState, middlewares)
 
 export default createStore(initialState)

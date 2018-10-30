@@ -51,4 +51,12 @@ app.on('activate', () => {
 // create main BrowserWindow when electron is ready
 app.on('ready', () => {
   mainWindow = createMainWindow()
+  // React DevTools
+  BrowserWindow.addDevToolsExtension(
+    '/Users/mohonri/Library/Application Support/Google/Chrome/Default/Extensions/fmkadmapgofadopljbjfkapdkoienihi/3.4.2_0'
+  )
+  // Redux DevTools
+  BrowserWindow.addDevToolsExtension(
+    '/Users/mohonri/Library/Application Support/Google/Chrome/Default/Extensions/lmhkpmbekcpmknklioeibfkpmmfibljd/2.15.3_0'
+  )
 })
